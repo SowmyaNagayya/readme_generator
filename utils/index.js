@@ -23,22 +23,22 @@ const questions = [
     {
         type: "input",
         message: "How To Install This Project",
-        name: "installationinstructions"
+        name: "installation"
     },
     {
         type: "input",
         message: "How To Use This Project",
-        name: "usageinformation"    
+        name: "usage"    
     },
     {
         type: "input",
         message: "How should others contribute to this project if they want?",
-        name: "contributionguidelines"    
+        name: "contributing"    
     },
     {
         type: "input",
         message: "How To Test This Project?",
-        name: "test instructions"     
+        name: "test"     
     },
     {
         type: "list",
@@ -55,18 +55,13 @@ const questions = [
         type: "input",
         message: "What Is Your Email?",
         name: "email"     
-    },
-    {
-        type: "input",
-        message: "What Is Live Link To This Project?",
-        name: "livelink"     
     }
-    
+       
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile("generateReadme.txt",generateReadme,(err) => {
+function writeToFile(fileName, generateReadme) {
+    fs.writeFile("generateREADME.md",generateReadme,(err) => {
         err ? console.log(err):console.log("Sucess");
     })
 }
@@ -77,10 +72,10 @@ function init() {
       .prompt(questions)
       .then(response => {
           const generateReadme= generateMarkdown(response);
-          writeToFile("generateReadme.txt", generateReadme);
+          writeToFile("generateREADME.md", generateReadme);
     })
     
-}
+};
 
 // Function call to initialize app
 init();

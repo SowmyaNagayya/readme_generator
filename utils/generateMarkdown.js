@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderMITLicenseBadge(license) {
   return `MIT License
-  Copyright (c)
+  Copyright (c) 2021 SowmyaNagayya
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@ function renderMITLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderBSD2ClauseLicense(license) {
   return `BSD 2-Clause License
-  Copyright (c)
+  Copyright (c) 2021 SowmyaNagayya
 
   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -44,7 +44,7 @@ function renderBSD2ClauseLicense(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderBoostLicense(license) {
-  return `Boost Software License - Version 1.0 - August 17th, 2003
+  return `Boost Software License - Version 1.0 - August 17th, 2003 2021 SowmyaNagayya
   
   Permission is hereby granted, free of charge, to any person or organization obtaining a copy of the software and accompanying documentation covered by this license (the "Software") to use, reproduce, display, distribute, execute, and transmit the Software, and to prepare derivative works of the Software, and to permit third-parties to whom the Software is furnished to do so, all subject to the following:
   
@@ -65,42 +65,42 @@ function renderLicenseSection(licenseType, license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(generateReadme) {
-  return `# ${generateReadme.title}
+function generateMarkdown(response) {
+  
+  return `# ${response.projecttitle}
+  https://github.com/${response.username}/${response.projecttitle}
 
-  # <Your-Project-Title>
+  # Your-Project-Title
+  ${response.projecttitle}
 
   ## Description
-  ${generateReadme.description}
+  ${response.description}
 
   ## Table of Contents 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
+  - [contributing](#Contributions)
   - [License](#license)
+  - [question](#Questions)
+  - [test](#tests)
 
   ## Installation
-  ${generateReadme.installation}
+  The  following necessary dependencies must be  installed  to run the application ${response.installation}
 
   ## Usage
-  ${generateReadme.usage}
+  In oredr to use this App ${response.usage}
 
-  ## Credits
-  ${generateReadme.credits}
+  ## Contributions
+  Contributers: ${response.contributing}
 
   ## License
-  The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-  ---
-  🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-  ## Badges
-  ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-  Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-  ## Features
-  If your project has a lot of features, list them here.
-  ## How to Contribute
-  If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+  The Project is licensed under the ${response.license} license.[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT).
+    
   ## Tests
-  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+  The Following is needed to run the test: ${response.test}
+
+  ## Questions
+  Please email any questions to ${response.email} or reference my [GitHub profile](https://github.com/${response.gitHub}).
   `;
 }
 
