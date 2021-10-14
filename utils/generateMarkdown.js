@@ -68,11 +68,11 @@ function generateMarkdown(response) {
       licenseIcon ='';
   }
   
-  return `# ${response.projectitle}
-  https://github.com/${response.username}/${response.projectitle}
+  return `# ${response.projecttitle}
+  https://github.com/${response.username}/${response.projecttitle}
 
   # Your-Project-Title
-  ${response.projectitle}
+  ${response.projecttitle}
 
   ## Description
   ${response.description}

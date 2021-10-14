@@ -1,8 +1,8 @@
-# undefined
-  https://github.com/SowmyaNagayya/undefined
+# readme_generator
+  https://github.com/SowmyaNagayya/readme_generator
 
   # Your-Project-Title
-  undefined
+  readme_generator
 
   ## Description
   This App allows developer to generate README.md file
