@@ -17,10 +17,10 @@ Built With
 -Inquirer
 -File System (Node.js)
 
-## Demo
+## Link to Demo
 
-![Here is a video of the generateREADME.md.](./assets/video/)
+https://drive.google.com/file/d/1UOFMTUVYL1YBEXxomV2kDmDnMQ9CikI_/view?usp=sharing
 
 ## Link to deployed page
 
-You can also refer to this [GitHub Pages](https://sowmyanagayya.github.io//).
+You can also refer to this [GitHub Pages](https://sowmyanagayya.github.io/readme_generator/).
